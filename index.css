@@ -1,0 +1,10 @@
+.well {
+}
+
+.well .well {
+    background-color: #304050;
+}
+
+.well .well .well {
+    background-color: #253545;
+}
