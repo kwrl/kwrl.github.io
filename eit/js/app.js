@@ -64,10 +64,10 @@ app
     };
 })
 .directive('stepEditor', function() {
-    return { templateUrl: '/directives/step-editor.html' };
+    return { templateUrl: 'directives/step-editor.html' };
 })
 .directive('stepCommentEditor', function() {
-    return { templateUrl: '/directives/step-comment-editor.html' };
+    return { templateUrl: 'directives/step-comment-editor.html' };
 })
 .directive("mathjaxBind", function() {
     return {
