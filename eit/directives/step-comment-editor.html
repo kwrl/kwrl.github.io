@@ -1,0 +1,23 @@
+<div id="anchor$index" class="panel panel-default step fade-in one">
+    <div ng-click="selectStep(step)" class="panel-body step-viewer">
+        <div class="row">
+            <div class="col-md-1">
+                <h1 class="transparent">#{{$index+1}}</h1>
+            </div>
+            <div class="col-md-5">
+                <h2><span mathjax-bind="step.expression"></span></h2>
+            </div>
+            <div class="col-md-6">
+                <h2>{{step.description}}</h2>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <h2>Kommentar: {{step.comment}}</h2>
+        </div>    
+    </div>
+</div>
+<div ng-show="step==selectedStep" class="row input-controls fade-in one">
+    <div class="col-md-12">
+        <textarea ng-model="step.comment" class="form-control"></textarea>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.fade-in.one {
+    -webkit-animation-delay: 0.0s;
+    -moz-animation-delay: 0.0s;
+    animation-delay: 0.0s;
+}
+
+.fade-in.two {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay:1.2s;
+    animation-delay: 1.2s;
+}
+
+.fade-in.three {
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+body {
+    padding: 50px 0px 50px 0px;
+}
+
+.step .step-viewer {
+    min-height: 100px;
+}
+
+.task-description {
+    font-size: 20px;
+}
+
+.input-controls .form-control {
+    height: 50px;
+    resize: none;
+}
+
+.button {
+    text-align:center;
+}
+
+.panel.step {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.transparent {
+    opacity: 0.2;
+}
+
+.close {
+    color: black;
+}
